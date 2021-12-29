@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height:100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("images/bg-pattern-top.svg"),url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position:-250px -300px, 900px 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.top{
+    /* position: relative; */
+    background-image: url("images/bg-pattern-card.svg");
+    background-size: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width:100%;
+    height: 40%;
+}
+
+.content{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 45%;
+}
+
+.profile-picture{ 
+    position: relative;
+    top:-80px;
+    width: 100px;
+    height: 100px;
+    /* margin-bottom: 200px; */
+    /* bottom: 400px; */
+    border: 2px solid whitesmoke;
+    /* border-color: whitesmoke; */
+    border-radius: 50%;
+}
+
+.description{
+    position: absolute;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* margin-bottom: 500px; */
+}
+
+.description-top{
+    display: flex;
+    justify-content:space-between;
+    /* align-items: ; */
+}
+
+.description-top p{
+    font-size: 20px;
+}
+
+.description-top p:first-child {
+    /* background-color: violet; */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.description-top p:last-child{
+    color: hsl(227, 10%, 46%);
+}
+
+.description-bottom p{
+    color: hsl(227, 10%, 46%);
+}
+
+.footer{
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top:solid 0.1em;
+    border-color:hsl(227, 10%, 46%);
+}
+
+.footer .stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats p{
+    color: hsl(227, 10%, 46%);
+}
+
+.nums{
+    font-weight: bold;
+}
+
+/* background - position */
+/* backhround-repeat */
+/* background size */
+/* position absolut and position relative */
